@@ -104,6 +104,7 @@
             <p>Hãy sống hết mình, hãy theo đuổi ước mơ và hãy nhớ rằng chúng ta đã từng có một thanh xuân thật đẹp. Dù đi đâu, làm gì, đừng quên những lời hứa ngày hôm nay: Một ngày nào đó, chúng ta sẽ gặp lại – trưởng thành, thành công và vẫn là những người bạn tuyệt vời của nhau! ❤️</p>
         </div>>
 
+
         <h2>📷 Thư viện ảnh</h2>
         <div class="slideshow-container">
             <button class="prev" onclick="changeSlide(-1)">⬅</button>
@@ -119,9 +120,9 @@
         </div>
         
         <h2>📞 Liên hệ</h2>
-        <p><strong>Chịu trách nhiệm nội dung:</strong> Nguyễn Thị Huyền Diệu & NMH</p>
+        <p><strong>Chịu trách nhiệm nội dung:</strong> Nguyễn Thị Huyền Diệu, NMH</p>
         <p><strong>Email liên hệ:</strong> <a href="mailto:hieunbk45@gmail.com">hieunbk45@gmail.com</a></p>
-		 <p><strong>Hotline:</strong> 0326519402</p>
+        <p><strong>Hottline:</strong> 0326519402</p>
     </div>
 
     <script>
@@ -138,6 +139,13 @@
             if (currentIndex >= images.length) currentIndex = 0;
             document.getElementById("slide").src = images[currentIndex];
         }
+        
+        function autoSlide() {
+            changeSlide(1);
+            setTimeout(autoSlide, 3000);
+        }
+        
+        setTimeout(autoSlide, 3000);
     </script>
 </body>
 </html>
